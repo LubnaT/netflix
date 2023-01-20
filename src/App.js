@@ -9,7 +9,7 @@ function App() {
   const [show,setshow] = useState(true)
   return (
     <div className="App">
-     {show ? <Landingpage className='bgimg bg-no-repeat bg-cover bg-center '/> : <Loginpage/>}
+     {show ? <Landingpage/> : <Loginpage/>}
     </div>
   );
 }

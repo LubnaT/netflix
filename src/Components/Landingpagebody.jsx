@@ -5,10 +5,10 @@ function Landingpagebody() {
     <div>
              <div className=""> 
             <div className=" mx-[200px] h-[700px]">
-            <h1 className=" block pt-[120px] text-center text-white font-semibold text-7xl ">Unlimited movies, TV shows and more.</h1>
-                <h2 className="font-medium mt-[25px] ml-[60px] mr-[40px] pt[10px] block text-center text-white text-4xl ">Watch Anywhere. Cancel Anytime.</h2>
+            <h1 className=" block pt-[180px] text-center text-white font-semibold text-5xl ">Unlimited movies, TV shows and more.</h1>
+                <h2 className="font-medium mt-[25px] ml-[60px] mr-[80px] pt[10px] block text-center text-white text-2xl ">Watch Anywhere. Cancel Anytime.</h2>
             <form>
-                <h3 className="font-medium mt-[30px] mx-[100px] pt[10px] block text-center text-white text-2xl">Ready to Watch? Enter your Email to create or restart your membership</h3>
+                <h3 className="font-medium mt-[30px] mx-[150px] pt[10px] block text-center text-white text-xl">Ready to Watch? Enter your Email to create or restart your membership</h3>
            
                 <div className=" relative mt-[30px] mx-[100px] flex-row flex">
                     
