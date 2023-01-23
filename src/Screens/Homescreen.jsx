@@ -7,11 +7,11 @@ import Navbar2 from '../Components/Navbar2';
 function Homescreen() {
   return (
          <div className=" bg-[url('https://dobienews.scuc.txed.net/wp-content/uploads/2017/05/20161201_stranger_things_node-1.jpg')] 
-         bg-no-repeat bg-cover bg-center w-full "
+         bg-no-repeat bg-cover bg-center w-full mt-10"
     >
       <div className="h-[450px] bg-gradient-to-t from-black bg-gradient-to-r from-black  ">
         <Navbar2/>
-        <div className=" text-white  px-10 pt-10">
+        <div className=" text-white  px-8 pt-10">
           <div className="flex">
              <img
                className="h-10 w-10 "
@@ -19,10 +19,17 @@ function Homescreen() {
               />
              <a className="mt-2 ">S E R I E S</a>
            </div>
-            <a className="text-5xl font-black font-serif ">Stranger Things</a>
+           <div className='text-left mr-[850px] ml-[40px]'>
+             <a className="text-6xl font-black font-serif justify-start ">Stranger Things</a>
+           </div>
+           <div className='text-left mr-[850px] ml-[10px]'>
+           <p className='text-left text-white pt-4'>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, 
+                terrifying supernatural forces and one strange little girl.</p>
+           </div>
+           
         </div>
-        <div className="mt-2 font-bold space-x-2 ">
-          <a href={''} className="bg-white px-5 py-1 ml-12 ">
+        <div className="mt-4 mx-[50px] flex text-left font-bold space-x-2 ">
+          <a href={''} className="bg-white px-5 py-1 ">
              {" "}
              <PlayArrowIcon />
              Play
@@ -31,11 +38,7 @@ function Homescreen() {
              <AddIcon /> My List
           </button>
         </div>
-        <div className="text-white ml-12 mt-4 text-xl">
-         
-        </div>
-
-        <div className="mt-12 px-8 font-bold py-4">
+        <div className="mt-8 px-8 text-left font-bold py-4">
           <a className="text-white text-xl">Top Pics For You</a>
         </div>
       </div>
