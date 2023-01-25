@@ -3,9 +3,26 @@ import LanguageIcon from '@mui/icons-material/Language';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 function Navbar() {
+
+  const [show ,setShow] = useState(false) ;
+
+    function transition(){
+        if(window.scrollY > 250){
+            setShow(true)
+        }
+        else{
+            setShow(false)
+        }
+    }
+
+    useEffect(()=>{
+        window.addEventListener("scroll" , transition);
+        return ()=>window.removeEventListener("scroll" ,transition) ;
+    },[])
+
   return (
-    <div className=" bg-transparent fixed top-0 h-[80px] w-full z-10">
-         <div className="flex w-full mx-[60px] justify-between items-center">
+    <div className={` ${show ? " bg-black ":" bg-transparent "} fixed top-0  w-full  z-10 `}>
+         <div className="flex w-full mx-[60px] justify-between py-4 items-center">
         <div className='flex'>
             <img src='https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png'
             className='h-24 w-40'/>
