@@ -1,11 +1,12 @@
 import React from 'react'
+import axios  from '../axios';
 import React, { useEffect, useState } from "react";
 
 
 function Row({ title, fetchUrl, isLargeRow = false }) {
 
     const [movies, setMovies] = useState(null);
-  const base_url = "https://image.tmdb.org/t/p/original";
+  const base_url = "https://image.tmdb.org/t/p/original/";
   
   const authcheck = "hjbgbfuhsgfshgf8959" ;
 
