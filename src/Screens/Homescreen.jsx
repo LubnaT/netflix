@@ -1,33 +1,22 @@
 import React from 'react'
 import Row from '../Components/Row';
 import Navbar2 from '../Components/Navbar2';
-import requests from '../Requests'
-import React, { useEffect, useState } from "react";
+import requests from '../Request'
+import  { useEffect } from "react";
 import axios from '../axios'
 import Homescreenbody from '../Components/Homescreenbody';
 
 function Homescreen() {
 
-  const [movies, setMovies] = useState(null);
-
   useEffect(()=>{
-    async function fetchData(){
-      await axios.get(requestss.fetchNetflixOriginals)
-      .then(response => {
-        setMovies(response.data.results[Math.floor(Math.random() * (response.data.results.length -1))])
-      }).catch(err => console.log(err))
-      
+    async function ft(){
+      await axios.get("/movie/297762/videos?api_key=a93b322b42e053f2037296980a90a436&language=en-US")
+      .then(res=>console.log(res)).catch(er => console.log(er))
     }
 
-    fetchData() ;
+    ft() ;
   },[])
 
-  function truncate(description , n){
-    return description?.length > n ? description.substr(0,n) +" . . ." : description ;
-
-  }
-
-  console.log(movies)
   return (
     
        <div>

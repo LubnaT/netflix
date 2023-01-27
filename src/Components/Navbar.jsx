@@ -1,6 +1,6 @@
 import React from 'react'
 import LanguageIcon from '@mui/icons-material/Language';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import  { useEffect, useState } from "react";
 
 function Navbar() {
 
@@ -21,7 +21,7 @@ function Navbar() {
     },[])
 
   return (
-    <div className={` ${show ? " bg-black ":" bg-transparent "} fixed top-0  w-full  z-10 `}>
+    <div className={` ${show ? " bg-black ":" bbg-gradient-to-r from-black to-black via-transparent "} fixed top-0  w-full  z-10 `}>
          <div className="flex w-full mx-[60px] justify-between py-4 items-center">
         <div className='flex'>
             <img src='https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png'
