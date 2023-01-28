@@ -7,8 +7,8 @@ import { Route, Routes } from "react-router-dom";
 import Loginpage from './Screens/Loginpage';
 import Homescreen from './Screens/Homescreen';
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
-import app from './Firebase'
-import WatchMovie from "./Screen/WatchMovie";
+import app from './firebase'
+import WatchMovie from "./Screens/WatchMovie";
 
 
 
