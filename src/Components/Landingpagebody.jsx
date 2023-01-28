@@ -3,7 +3,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Loginpage from '../Screens/Loginpage';
 import Homescreen from '../Screens/Homescreen';
 
-function Landingpagebody() {
+function Landingpagebody({Cred ,SCred ,handle}) {
   const [login,setlogin] = useState("")
   return (
     <div>
@@ -20,12 +20,12 @@ function Landingpagebody() {
                    <label className="text-[#8c8c8c] left-20 text-sm font-normal absolute top-[15px] text-left hover:translate-y-[-50%] hover: transition-[font] hover: duration-[0.1s] hover: ease-in-out ">Email Address</label> 
                   </div>
                 <div className="justify-center items-center flex border-l-2 border-solid border-black/60">
-                    <button onClick={()=>setlogin(<Loginpage/>) } id="submit" type="submit" name="submit"  
+                    <a href={<Loginpage Cred={Cred} SCred={SCred} handle={handle}/>} id="submit" type="submit" name="submit"  
                       className="bg-red-700 text-center text-2xl font-semibold text-white  w-[200px] h-[48px] pb-2">Get Started 
                      <span className="text-xl font-semibold text-white ">
                        <ArrowForwardIosIcon/> 
                        </span>
-                    </button>
+                    </a>
                 </div>
                 </div>
             </form>
