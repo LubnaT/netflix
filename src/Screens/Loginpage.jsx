@@ -16,7 +16,7 @@ function Loginpage({Cred ,SCred ,handle}) {
 
   return (
     <div className='flex flex-col bg-black h-screen bg-[url("https://media-assets-05.thedrum.com/cache/images/thedrum-prod/s3-news-tmp-10557-netflixa--default--1280.jpg")] opacity-80 bg-cover bg-no-repeat bg-center  '>
-    <img className='h-28 w-48' src="https://www.edigitalagency.com.au/wp-content/uploads/Netflix-logo-red-black-png.png"/>
+    
     
       <div className='bg-black'>
         <Navbar />
@@ -25,7 +25,7 @@ function Loginpage({Cred ,SCred ,handle}) {
       
         
        
-        <div className='bg-black/60 h-auto w-[28rem] mx-auto mb-0 px-12 py-12 space-y-8 rounded-lg'>
+        <div className='mt-[150px] bg-black/60 h-auto w-[28rem] mx-auto mb-0 px-12 py-2 space-y-8 rounded-lg'>
        <p className='text-white font-bold text-2xl'>{signup ? "Sign Up" : "Sign In"}</p>
        <input onChange={handleChange}  value={Cred.email} name="email"  type='email' placeholder='Email or Phone Number'
         className='text-slate-400 font-semibold bg-zinc-700 px-4 py-2 rounded-md w-[22rem]'/>
@@ -41,7 +41,7 @@ function Loginpage({Cred ,SCred ,handle}) {
           </div>
           </div>
            
-           <div className='text-slate-500 space-y-2 pt-4 font-semibold'>
+           <div className='text-slate-400 space-y-2 pt-2 text-sm font-semibold'>
               <p> {!signup ? "New to Netflix " : "Already have an Account? "}<button onClick={()=> setSignUp(!signup)} 
                  className="text-white hover:underline cursor-pointer">{!signup ? " Sign Up" : " Sign In"} Now</button>
               </p>

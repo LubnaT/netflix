@@ -37,7 +37,7 @@ function Homescreenbody() {
       backgroundImage: ` url('${base_url+movies?.backdrop_path}') `
       }} 
     className=" bg-no-repeat bg-cover bg-center w-full mt-10">
-  <div className="h-[450px] bg-gradient-to-t from-black via-transparent to-transparent bg-gradient-to-r from-black  ">
+  <div className="h-[450px] bg-gradient-to-t from-black  to-transparent bg-gradient-to-r from-black  ">
   
    <div className="text-white  px-8 pt-10">
      <div className="flex">
