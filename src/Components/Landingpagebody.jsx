@@ -1,10 +1,5 @@
 import React, { useState } from 'react'
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import Loginpage from '../Screens/Loginpage';
-import Homescreen from '../Screens/Homescreen';
-
-function Landingpagebody({Cred ,SCred ,handle}) {
-  const [login,setlogin] = useState("")
+function Landingpagebody() {
   return (
     <div>
              <div className="bg-black/10 overflow-x-hidden overflow-y-hidden"> 

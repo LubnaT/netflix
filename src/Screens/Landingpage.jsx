@@ -2,13 +2,13 @@ import React from 'react'
 import Landingpagebody from '../Components/Landingpagebody'
 import Navbar from '../Components/Navbar'
 
-function Landingpage({Cred ,SCred ,handle}) {
+function Landingpage() {
    
   return (
     <div  className='banner object-cover bg-no-repeat w-full h-full '>
     
         <Navbar/>
-        <Landingpagebody Cred={Cred} SCred={SCred} handle={handle}/>
+        <Landingpagebody/>
 
     </div>
   )
