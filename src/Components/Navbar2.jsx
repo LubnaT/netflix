@@ -15,9 +15,14 @@ function Navbar2() {
             <div>Recently Added</div>
             <div>MyList</div>
          </div>
-         <div className='text-white text-2xl mr-[150px]'>
+
+         <div className='text-white text-2xl mr-[60px]'>
             <SearchIcon fontSize='inherit'/>
          </div>
+
+         <div className='mr-[100px]'>
+            <button className="py-2 px-4 rounded-md  text-sm bg-red-600 text-white">Sign out</button>
+            </div>
 
         </div>
 
