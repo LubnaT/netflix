@@ -19,7 +19,7 @@ function App() {
 
   const schema = {email : "" , pass : ""} ;
   const [ cred  ,setCred ] = useState(schema) ;
-  const [user ,setUser] = useState(true) ;
+  const [user ,setUser] = useState(null) ;
 
 
   const createUser = async () => {

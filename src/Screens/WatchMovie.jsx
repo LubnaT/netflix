@@ -4,8 +4,8 @@ import { useParams } from 'react-router-dom'
 import axios from '../axios';
 
 function WatchMovie() {
-    const authcheck = "hjbgbfuhsgfshgf8959" ;
-    const {movieid , auth} = useParams()
+    const authcheck = "hjbgbfuhsgfshgf8959" ; //doubt
+    const {movieid , auth} = useParams() //doubt
     const [videos ,setVideos] = useState(null)
     
 

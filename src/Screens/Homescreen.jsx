@@ -10,7 +10,7 @@ function Homescreen() {
 
   useEffect(()=>{
     async function ft(){
-      await axios.get("/movie/297762/videos?api_key=a93b322b42e053f2037296980a90a436&language=en-US")
+      await axios.get("/movie/297762/videos?api_key=a93b322b42e053f2037296980a90a436&language=en-US")  //doubt
       .then(res=>console.log(res)).catch(er => console.log(er))
     }
 
